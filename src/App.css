@@ -1,0 +1,59 @@
+.Roll-dices{ 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.dice1{ 
+    font-size: 200px;
+    margin-right: 100px;
+   
+}
+.dice2{ 
+    font-size: 200px;
+ 
+}
+.animate{ 
+    animation-name: wobble;
+    animation-duration: 1s;
+}
+
+.btn-h2{ 
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    flex-direction: column;
+}
+button{ 
+   width: 300px;
+   padding: 20px;
+   background-color: greenyellow;
+   font-size: 30px;
+}
+h2{ 
+font-family: monospace;
+font-size: 30px
+}
+
+@keyframes wobble {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    15% {
+      transform: translate3d(-25px, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+    30% {
+      transform: translate3d(20px, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+    45% {
+      transform: translate3d(-15px, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+    60% {
+      transform: translate3d(10px, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+    75% {
+      transform: translate3d(-5px, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
